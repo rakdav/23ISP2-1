@@ -51,5 +51,3 @@ else
 }
 Console.WriteLine($"max={max} min={min}");
 
-
-
