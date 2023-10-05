@@ -31,7 +31,7 @@
 //Средний уровень 26
 Console.Write("Введите n:");
 int n = int.Parse(Console.ReadLine());
-Console.Write("Введите n:");
+Console.Write("Введите x:");
 double x = double.Parse(Console.ReadLine());
 switch (n)
 {
