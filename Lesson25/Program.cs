@@ -129,5 +129,10 @@ while(n != 0)
     if (temp == 5 || temp == 7) count5or7++;
     n/=10;
 }
-
+Console.WriteLine($"Количество цифр 3 в нем {count3}");
+Console.WriteLine($"Cколько раз в нем встречается последняя цифра {countLast}");
+Console.WriteLine($"Количество четных цифр {countOdd}");
+Console.WriteLine($"Сумма цифр, больших пяти {sumGreate5}");
+Console.WriteLine($"Произведение цифр, больших семи {multGereate7}");
+Console.WriteLine($"Количество цифр 0 и 5 {count5or7}");
 
