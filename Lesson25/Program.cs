@@ -87,19 +87,19 @@
 //Console.WriteLine($"Sum={s:F2}");
 
 //Найдите все четырехзначные числа, сумма цифр каждого из которых равна 15 
-//int i = 1000;
-//while (i<=9999)//внешний цикл
-//{
-//    int temp = i;
-//    int s = 0;
-//    while (temp != 0) //внутренний цикл
-//    {
-//        s += temp % 10;
-//        temp /= 10;
-//    }
-//    if (s == 15) Console.Write(i+" ");
-//    i++;
-//}
+int i = 1000;
+while (i <= 9999)//внешний цикл
+{
+    int temp = i;
+    int s = 0;
+    while (temp != 0) //внутренний цикл
+    {
+        s += temp % 10;
+        temp /= 10;
+    }
+    if (s == 15) Console.Write(i + " ");
+    i++;
+}
 
 //Дано натуральное число. Определить:
 //а) количество цифр 3 в нем;
@@ -109,30 +109,30 @@
 //д) произведение его цифр, больших семи;
 //е) сколько раз в нем встречаются цифры 0 и 5 (всего).
 
-Console.Write("Введите целое число:");
-int n=int.Parse(Console.ReadLine());
-int count3 = 0;
-int last = n % 10;
-int countLast = 0;
-int countOdd = 0;
-int sumGreate5 = 0;
-int multGereate7 = 1;
-int count5or7 = 0;
-while(n != 0)
-{
-    int temp = n % 10;
-    if(temp==3) count3++;
-    if(temp==last) countLast++;
-    if(temp%2==0) countOdd++;
-    if (temp > 5) sumGreate5 += temp;
-    if(temp>7) multGereate7 *= temp;
-    if (temp == 5 || temp == 7) count5or7++;
-    n/=10;
-}
-Console.WriteLine($"Количество цифр 3 в нем {count3}");
-Console.WriteLine($"Cколько раз в нем встречается последняя цифра {countLast}");
-Console.WriteLine($"Количество четных цифр {countOdd}");
-Console.WriteLine($"Сумма цифр, больших пяти {sumGreate5}");
-Console.WriteLine($"Произведение цифр, больших семи {multGereate7}");
-Console.WriteLine($"Количество цифр 0 и 5 {count5or7}");
+//Console.Write("Введите целое число:");
+//int n=int.Parse(Console.ReadLine());
+//int count3 = 0;
+//int last = n % 10;
+//int countLast = 0;
+//int countOdd = 0;
+//int sumGreate5 = 0;
+//int multGereate7 = 1;
+//int count5or7 = 0;
+//while(n != 0)
+//{
+//    int temp = n % 10;
+//    if(temp==3) count3++;
+//    if(temp==last) countLast++;
+//    if(temp%2==0) countOdd++;
+//    if (temp > 5) sumGreate5 += temp;
+//    if(temp>7) multGereate7 *= temp;
+//    if (temp == 5 || temp == 7) count5or7++;
+//    n/=10;
+//}
+//Console.WriteLine($"Количество цифр 3 в нем {count3}");
+//Console.WriteLine($"Cколько раз в нем встречается последняя цифра {countLast}");
+//Console.WriteLine($"Количество четных цифр {countOdd}");
+//Console.WriteLine($"Сумма цифр, больших пяти {sumGreate5}");
+//Console.WriteLine($"Произведение цифр, больших семи {multGereate7}");
+//Console.WriteLine($"Количество цифр 0 и 5 {count5or7}");
 
