@@ -34,18 +34,38 @@
 //foreach (double i in mas1) Console.Write($"{i:F2} ");
 
 //вариант 26 высокий
-Console.Write("Введите размер массива:");
-int n=int.Parse(Console.ReadLine());
-int[] mas=new int[n];
-Random rnd=new Random();
-for(int i=0; i<mas.Length; i++)
+//Console.Write("Введите размер массива:");
+//int n=int.Parse(Console.ReadLine());
+//int[] mas=new int[n];
+//Random rnd=new Random();
+//for(int i=0; i<mas.Length; i++)
+//{
+//    mas[i]=rnd.Next(10,100);
+//    Console.Write(Convert.ToString(mas[i],2)+" ");
+//}
+//Console.WriteLine();
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i] += 10;
+//    Console.Write(Convert.ToString(mas[i], 2) + " ");
+//}
+    double dec = 6.8;
+    string str1 = "";
+    while (dec > 0)
+    {
+        str1 = String.Concat(Convert.ToString(dec % 2), str1);
+        dec = Math.Truncate(dec / 2);
+    }
+string str2 = "";
+int c;
+int n = 0;
+while (n < 3)
 {
-    mas[i]=rnd.Next(10,100);
-    Console.Write(Convert.ToString(mas[i],2)+" ");
+
+    dec *= 2;
+    c = Convert.ToInt32(Math.Truncate(dec));
+    str2 = String.Concat(str2, Convert.ToString(c));
+    dec -= c;
+    n++;
 }
-Console.WriteLine();
-for (int i = 0; i < mas.Length; i++)
-{
-    mas[i] += 10;
-    Console.Write(Convert.ToString(mas[i], 2) + " ");
-}
+Console.WriteLine(str1+"."+str2);
