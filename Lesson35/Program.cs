@@ -60,6 +60,33 @@ try
             }
         }
     }
+    Console.WriteLine("Отсортрованный по возрастанию среднего бала список:");
+    foreach (Student student in students)
+    {
+        Console.WriteLine(student.fio);
+        Console.WriteLine(student.group);
+        for (int i = 0; i < student.marks.Length; i++)
+        {
+            Console.Write(student.marks[i]+" ");
+        }
+    }
+    Console.WriteLine();
+    Console.WriteLine("Студенты без троек:");
+
+    foreach (Student student in students)
+    {
+        bool b = true;
+        for (int i = 0; i < student.marks.Length; i++)
+        {
+            if (student.marks[i]<4) b = false;
+        }
+        if (b)
+        {
+            Console.WriteLine(student.fio);
+            Console.WriteLine(student.group);
+        }
+    }
+    
 }
 catch(Exception ex) 
 {
