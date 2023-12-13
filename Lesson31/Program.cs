@@ -1,5 +1,5 @@
-﻿//Console.Write("Введите количество строк:");
-//int n=int.Parse(Console.ReadLine());
+﻿Console.Write("Введите количество строк:");
+int n = int.Parse(Console.ReadLine()!);
 //Console.Write("Введите количество столбцов:");
 //int m = int.Parse(Console.ReadLine());
 //int[,] mas1={{1,3,5},
